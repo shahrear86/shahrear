@@ -1,4 +1,4 @@
-%function N = npdf(mu,sigma,X)
+function N = npdf(mu,sigma,X)
 
 %This function will return you the value of the normal probability density function for the constant mean and variance.
 %Matlab and Octave both have own built in function called normpdf. We can verify the
@@ -7,9 +7,9 @@
 
 %created by: shahrear
 %student.eco86@gmail.com
-mu=0
-sigma=4
-X=(-100:0.1:100)
+%mu=0
+%sigma=4
+%X=(-100:0.1:100)
 
 if nargin > 3
     disp ('error: The number of the input should be three')
@@ -28,7 +28,7 @@ plot(X,N)
 xlabel ("X");
 ylabel ("f(X)");
 legend(sigma);
-%end
+end
 
 
 
