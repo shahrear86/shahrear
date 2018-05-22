@@ -6,6 +6,7 @@ function poisson = poipdf(lambda,X)
 
 %created by: shahrear
 %student.eco86@gmail.com
+% © Md. Shahrear Zaman
 
 if  nargin < 2
     disp('error: number of input should be two');
