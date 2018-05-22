@@ -6,6 +6,7 @@ function gmdf = gamdf(x,a,b)
 
 %created by: shahrear
 %student.eco86@gmail.com
+% © Md. Shahrear Zaman
 
 
 if isscalar(a)~=1||isscalar(b)~=1
