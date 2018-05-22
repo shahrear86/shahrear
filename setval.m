@@ -4,6 +4,7 @@ function X = setval(X,col,m)
 
 %Prepared by shahrear
 %student.eco86@gmail.com
+% © Md. Shahrear Zaman
 %07.08.2017-08.08.2017
 
 %%%%%%%%%%%%%%%%%%% 
