@@ -4,6 +4,7 @@ function X = setvaluedummy(X,detcol,n,m)
 
 %created by shahrear
 %student.eco86@gmail.com 
+% © Md. Shahrear Zaman
 %07-08-2017
 
 *******************************************
