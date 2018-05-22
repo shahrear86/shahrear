@@ -1,5 +1,6 @@
 %Prepared by: shahrear
 %student.eco86@gmail.com
+% © Md. Shahrear Zaman
 %March-May 2017
 
 clear all
