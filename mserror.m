@@ -1,6 +1,7 @@
 function MSE = mserror(x,y,cons,beta) 
 %created by: shahrear
 %student.eco86@gmail.com
+% © Md. Shahrear Zaman
 %reference: https://en.wikipedia.org/wiki/Mean_squared_error
 
 % within sample mse of the predictor
