@@ -5,6 +5,7 @@ function X = setzero(X,llim,ulim)
 
 %Prepared by shahrear
 %student.eco86@gmail.com
+% © Md. Shahrear Zaman
 
 [r c]=size(X)
 k=r*c
