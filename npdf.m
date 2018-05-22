@@ -7,6 +7,7 @@ function N = npdf(mu,sigma,X)
 
 %created by: shahrear
 %student.eco86@gmail.com
+% © Md. Shahrear Zaman
 %mu=0
 %sigma=4
 %X=(-100:0.1:100)
