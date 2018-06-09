@@ -1,8 +1,8 @@
 %created by shahrear
 %student.eco86@gmail.com
+%June2018
 %(c) Md. Shahrear Zaman
-clear all 
-XY = xlsread('C:\Users\shahrear\Desktop\function\test 1.xlsx','A2:AU40');
+clear all
 %Read the file
 %XY = xlsread('.....................');
 Year =XY(:,1); 
