@@ -14,7 +14,7 @@ BM   =XY(:,21);
 EXRJ =XY(:,22);
 EXRUS=XY(:,23);
 EXRUK=XY(:,24);
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %taking the log
 BOT    =(XY(:,17));
 BNCL   =log(XY(:,18));
@@ -24,7 +24,7 @@ BML    =log(XY(:,21));
 EXRJL  =log(XY(:,22));
 EXRUSL =log(XY(:,23));
 EXRUKL =log(XY(:,24));
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Adjusting the lag value (1-lag)
 %Use the function lag
 BOTL1    = lag(BOT,1);
@@ -35,7 +35,7 @@ BMLL1    = lag(BML,1);
 EXRJLL1  = lag(EXRJL,1);
 EXRUSLL1 = lag(EXRUSL,1);
 EXRUKLL1 = lag(EXRUKL,1);
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Set up the variables
 Y = EXRUSLL1(:,1);
 X = [EXRUSLL1(:,2) BOTL1(:,1) BOTL1(:,2) BNCLL1(:,1) BNCLL1(:,2) GNCLL1(:,1) GNCLL1(:,2) NMLL1(:,1) NMLL1(:,2) BMLL1(:,1) BMLL1(:,2) EXRJLL1(:,1) EXRJLL1(:,2)  EXRUKLL1(:,1) EXRUKLL1(:,2)]
@@ -44,27 +44,27 @@ X = [EXRUSLL1(:,2) BOTL1(:,1) BOTL1(:,2) BNCLL1(:,1) BNCLL1(:,2) GNCLL1(:,1) GNC
 betaFull = inv(X'*X)*(X'*Y)
 y_hatFull=X*betaFull
 error = Y - y_hatFull
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 plot(Y)
 plot(y_hat)
 plot(error)
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 back=8   % 8-years less value 
 %back=16
 lap =2   % 2-steps forward
 n=back/(lap*lap) % formula for making a loop to roll through the steps 
 %and to find out the value of ols, pridiction and error for each window
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 T=length(Y);
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 Yint=Y(1:T-back,1);
 Xint=X(1:T-back,:);
 betaint = inv(Xint'*Xint)*(Xint'*Yint)
 y_hatint=Xint*betaint
 errorint=Yint - y_hatint
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 for i=0:n
    Yr=Y(1+2^(i)*lap:T-back+2^(i)*lap,1);
    Xr=X(1+2^(i)*lap:T-back+2^(i)*lap,:);
