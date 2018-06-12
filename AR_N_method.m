@@ -1,4 +1,4 @@
-%AR - n method
+%AR - N method
 %created by shahrear
 %student.eco86@gmail.com
 %(c) Md. Shahrear Zaman
