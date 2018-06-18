@@ -4,8 +4,6 @@
 %(c) Md. Shahrear Zaman
 %The model and method are structured by : Md. Shahrear Zaman
 clear all 
-pkg load io
-XY = xlsread('C:\Users\shahrear\Desktop\function\test 1.xlsx','A2:AU40');
 %Read the file
 %XY = xlsread('.....................');
 Year =XY(:,1); 
