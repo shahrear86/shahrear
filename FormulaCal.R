@@ -3,5 +3,5 @@ result = function(m,n){(matrix(runif(m*n),m,n))^2 -(matrix(runif(m*n),m,n))^2}
 #the x and y are the uniformly randomly chosen value between 0 and 1
 #result(10,10) for example
 #created by: shahrear
-# @ Md. Shahrear Zaman
+# (c) Md. Shahrear Zaman
 # student.eco86@gmail.com
