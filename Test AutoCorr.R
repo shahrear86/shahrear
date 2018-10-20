@@ -4,6 +4,7 @@
 
 #Reference: Econometric Analysis . By  William H. Greene
 
+#Read the data
 #Declare the variable X and Y 
 r <- nrow(X)
 c <- ncol(X)
