@@ -5,7 +5,7 @@
 #Reference: Econometric Analysis . By  William H. Greene
 
 #Read the data
-#Declare the variable X and Y 
+#Declare the variables as X and Y 
 r <- nrow(X)
 c <- ncol(X)
 b = solve(t(X)%*%X)%*%t(X)%*%Y
