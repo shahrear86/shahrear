@@ -23,8 +23,8 @@ roh = solve(t(epsil_1)%*%epsil_1)%*%t(epsil_1)%*%epsil
 M1<-cbind(matrix(0:8),matrix(0:8-1),matrix(0:8-2),matrix(0:8-3),matrix(0:8-4),matrix(0:8-5),matrix(0:8-6),matrix(0:8-7),matrix(0:8-8))
 M1[upper.tri(M1)]=0
 M2 <- t(M1)
-M <- M1 + M2
-Eete = (sigma^2/(1-roh^2))%*%M
+Omega <- M1 + M2
+Eete = (sigma^2/(1-roh^2))%*%Omega
 
 
 
