@@ -14,7 +14,7 @@ c <- ncol(X)
 b = solve(t(X)%*%X)%*%t(X)%*%Y
 e = Y - X%*%b
 
-sigma  = (1/(r - c))%*%sum(e^2)  
+sigma2  = (1/(r - c))%*%sum(e^2)  
 
 # by setting lag order one 
 epsil <-e[1:r-1]
@@ -29,8 +29,10 @@ M1[upper.tri(M1)]=0
 M2 <- t(M1)
 Omega <- M1 + M2
 V1 <- 1/(1-roh^2)
+V1 = matrix(V1,8,8)
 V  <- V1*Omega
-Eete = sigma^2%*%V
+sigma2 = matrix(sigma2,8,8)
+Eete = sigma^2*V
 
 
 
