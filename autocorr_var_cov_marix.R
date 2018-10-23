@@ -28,8 +28,8 @@ M1<-cbind(matrix(0:8),matrix(0:8-1),matrix(0:8-2),matrix(0:8-3),matrix(0:8-4),ma
 M1[upper.tri(M1)]=0
 M2 <- t(M1)
 Omega <- M1 + M2
-V1 <- (1-roh^2)
-V  <- V1.*Omega
+V1 <- 1/(1-roh^2)
+V  <- V1*Omega
 Eete = sigma^2%*%V
 
 
