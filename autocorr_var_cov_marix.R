@@ -32,7 +32,7 @@ V1 <- 1/(1-roh^2)
 V1 = matrix(V1,8,8)
 V  <- V1*Omega
 sigma2 = matrix(sigma2,8,8)
-Eete = sigma^2*V
+Eete = sigma2*V
 
 
 
