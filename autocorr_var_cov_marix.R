@@ -22,16 +22,16 @@ epsil_1<-e[2:r]
 
 roh = solve(t(epsil_1)%*%epsil_1)%*%t(epsil_1)%*%epsil
 
-# Let's consider the number of the rows-> 8
+# Let's consider the number of the rows-> 9
 
 M1<-cbind(matrix(0:8),matrix(0:8-1),matrix(0:8-2),matrix(0:8-3),matrix(0:8-4),matrix(0:8-5),matrix(0:8-6),matrix(0:8-7),matrix(0:8-8))
 M1[upper.tri(M1)]=0
 M2 <- t(M1)
 Omega <- M1 + M2
 V1 <- 1/(1-roh^2)
-V1 = matrix(V1,8,8)
+V1 = matrix(V1,9,9)
 V  <- V1*Omega
-sigma2 = matrix(sigma2,8,8)
+sigma2 = matrix(sigma2,9,9)
 Eete = sigma2*V
 
 
