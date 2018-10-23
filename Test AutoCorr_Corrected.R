@@ -5,7 +5,7 @@
 #Reference: Econometric Analysis . By  William H. Greene
 
 #Read the data
-#Be careful about the order of the sequances :)
+#Be careful about the order of the sequences :)
 #Declare the variables as X and Y 
 r <- nrow(X)
 c <- ncol(X)
