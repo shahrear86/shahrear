@@ -2,8 +2,9 @@
 #(c) Md.Shahrear Zaman
 #student.eco86@gmail.com
 
-#Reference: Econometric Analysis . By  William H. Greene
-#           Time Series Analysis . By  James D. Hamilton
+#Reference: Time Series Analysis . By  James D. Hamilton
+#           Econometric Analysis . By  William H. Greene
+          
 
 #Read the data
 #Declare the variables as X and Y 
