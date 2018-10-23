@@ -14,7 +14,7 @@ c <- ncol(X)
 b = solve(t(X)%*%X)%*%t(X)%*%Y
 e = Y - X%*%b
 
-sigma  = (1/(r - c))%*%sum(e)  
+sigma  = (1/(r - c))%*%sum(e^2)  
 
 # by setting lag order one 
 epsil <-e[1:r-1]
