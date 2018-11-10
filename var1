@@ -42,7 +42,7 @@ lagadj2 = n-lag2
 X1=X1[1:lagadj1,]
 X2=X[1:lagadj2,]
 
-# you can continue the process by increasing the lag order, depending on # the length of the observations
+# you can continue the process by increasing the lag order, depending on the length of the observations
  
 n1 = nrow(X1)
 n2 = nrow(X2)
