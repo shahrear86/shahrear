@@ -98,5 +98,5 @@ Y2=rbind(Y,I1,I2)
 b1 = solve(t(Xbind2)%*%Xbind2,t(Xbind2)%*%Y2)
  
 
-
+# mistakes could be possible..still developing...
 
