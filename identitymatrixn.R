@@ -12,4 +12,3 @@ identitymatrix = function(n,m){
  return(I) 
 }
 
-# Save your script and type submit() in the console after you have written the function
