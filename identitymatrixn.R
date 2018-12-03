@@ -1,3 +1,7 @@
+created by: shaharear
+(c) Md. Shahrear Zaman
+student.eco86@gmail.com
+
 identitymatrix = function(n,m){
     I = matrix(0,nrow = n, ncol = m)
     for (i in 1:n) {# i is the number of the row
