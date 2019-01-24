@@ -1,0 +1,58 @@
+#created by: Md. Shahrear Zaman
+#shahrear.zaman1971@gmail.com
+#student.eco86@gmail.com
+
+#The code has written for the online contest of the united-nations-millennium-development-goals provided by Driven Data
+#https://www.drivendata.org/competitions/1/united-nations-millennium-development-goals 
+
+#The code is written into two parts.
+#gretlBDG.inp
+#gretlBGD2.inp 
+
+ar1 l_Ruralpopulationoftotalpopulat 0 l_Ruralpopulationoftotalpopulat(-1)
+fcast 1972 2006
+#Theil's U  0.624
+#Mean Absolute Error 2.1674
+#2006    13.513221    12.438498
+genr xu07 = 13.513221 + 2.1674
+genr xl07 = 13.513221 - 2.1674
+
+
+# Replaced scalar xu07 = 15.6806
+# Replaced scalar xl07 = 11.3458
+#you need to add the value of the xu07 and xl07 manually 
+ar1 l_Ruralpopulationoftotalpopulat 0 l_Ruralpopulationoftotalpopulat(-1)
+fcast 1972 2007
+
+#for the upper value
+#Theil's U   0.62686
+#Mean Absolute Error 2.2103
+#2007  15.680600  12.732506
+
+genr xuu08 = 12.732506 + 2.2103
+genr xul08 = 12.732506 - 2.2103
+
+#for the lower value
+#Theil's U   0.6239
+#Mean Absolute Error 2.1324
+#2007  11.345800  12.587026
+
+genr xlu08 = 12.587026 + 2.1674
+genr xll08 = 12.587026 - 2.1674
+
+
+# Generated scalar xuu08 = 14.9428
+# ? genr xul08 = 12.732506 - 2.2103
+# Generated scalar xul08 = 10.5222
+# ? genr xlu08 = 12.587026 + 2.1674
+# Generated scalar xlu08 = 14.7544
+# ? genr xll08 = 12.587026 - 2.1674
+# Generated scalar xll08 = 10.4196
+
+
+# Generated scalar xuu08 = 14.9428
+# Generated scalar xll08 = 10.4196
+
+
+
+

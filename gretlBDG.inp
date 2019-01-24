@@ -1,0 +1,46 @@
+#created by: Md. Shahrear Zaman
+#shahrear.zaman1971@gmail.com
+#student.eco86@gmail.com
+
+#The code has written for the online contest of the united-nations-millennium-development-goals provided by Driven Data
+#https://www.drivendata.org/competitions/1/united-nations-millennium-development-goals 
+
+#The code is written into two parts.
+#gretlBDG.inp
+#gretlBGD2.inp 
+
+# logged commands
+open C:\Users\shahrear\Desktop\Bangladesh.csv
+logs Deathratecrudeper1000people
+logs Ruralpopulationoftotalpopulati
+ols l_Deathratecrudeper1000people 0 l_Ruralpopulationoftotalpopulat --robust
+arima 2 0 2 ; l_Deathratecrudeper1000people \
+  l_Ruralpopulationoftotalpopulat 0
+fcast 1972 2006
+gnuplot l_Ruralpopulationoftotalpopulat --time-series --with-lines
+setobs 1 1 --cross-section
+setobs 1 1972 --time-series
+gnuplot l_Deathratecrudeper1000people --time-series --with-lines
+ols l_Deathratecrudeper1000people 0 l_Ruralpopulationoftotalpopulat --robust
+scalar beta = $coeff(l_Ruralpopulationoftotalpopulat)
+scalar cons = $coeff(const)
+series ehat = $uhat
+series yht=$yhat
+genr N = $nobs
+genr yhat06 = yht[N]
+genr y06 =  l_Deathratecrudeper1000people[N]
+genr yhat07u = cons + beta*15.6806
+genr yhat07l = cons + beta*11.3458
+genr yhat08u = cons + beta*14.9428
+genr yhat08l = cons + beta*10.4196
+# ? genr yhat07u = cons + beta*15.6806
+# Generated scalar yhat07u = 7.80883  (pridicted value(from the upper limit))
+# ? genr yhat07l = cons + beta*11.3458
+# Generated scalar yhat07l = 8.75668  (pridicted value(from the lower limit))
+# ? genr yhat08u = cons + beta*14.9428
+# Generated scalar yhat08u = 7.97016 (pridicted value(from the upper limit))
+# ? genr yhat08l = cons + beta*10.4196
+# Generated scalar yhat08l = 8.9592  (pridicted value(from the lower limit))
+
+
+   
