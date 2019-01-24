@@ -42,5 +42,5 @@ genr yhat08l = cons + beta*10.4196
 # ? genr yhat08l = cons + beta*10.4196
 # Generated scalar yhat08l = 8.9592  (pridicted value(from the lower limit))
 
-
+#Additional comment: Bangladesh will not achieve Millenium Development Goal
    
