@@ -43,4 +43,17 @@ genr yhat08l = cons + beta*10.4196
 # Generated scalar yhat08l = 8.9592  (pridicted value(from the lower limit))
 
 #Additional comment: Bangladesh will not achieve Millennium Development Goal
+
+#cross section: main part
+#Model 1: OLS, using observations 1972-2006 (T = 35)
+#Dependent variable: l_Deathratecrudeper1000people
+#HAC standard errors, bandwidth 2 (Bartlett kernel)
+#
+#                      coefficient  std. error  t-ratio   p-value 
+# ---------------------------------------------------------------
+#  const                11.2375     0.741401    15.16    2.00e-016 ***
+#  l_Ruralpopulatio~    −0.218660   0.0462362   −4.729   4.09e-05  ***
+
+#additional AR(1) will help to predict up to 2008. please check gretlBDG2.inp 
+
    
