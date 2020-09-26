@@ -199,7 +199,7 @@ pdf_sigma2_yX = ((sqrt(sigma2))^(-2*abs(N_star/2) -1 ))*(((Lambda_star)/2)^(N_st
 % (1/gamma(N_star/2))
 % exp(-(1/2)*Lambda_star*((sqrt(sigma2))^(-2)))
 
-Likelihood_BetaSigma_YX = diag(pdf_beta_sigma2YX).*diag(pdf_sigma2_yX)
+pdf_BetaSigma_YX = diag(pdf_beta_sigma2YX).*diag(pdf_sigma2_yX)
 
 pdf_sigma2_yX = ((sqrt(sigma2))^(-2*abs(N_star/2) -1 ))*(((Lambda)/2)^(N_star/2))*(1/gammaln(N/2))*exp(-(1/2)*Lambda*((sqrt(sigma2))^(-2)))
 
