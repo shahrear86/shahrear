@@ -2,7 +2,7 @@
 %(c) Md. Shahrear Zaman
 % shahrear.zaman1971@gmail.com
 % student.eco86@gmail.com
-% date 13/07/2020 time 07:18P.M. % date 13/09/2020 time 05:19P.M. % date 14/09/2020 time 07:16P.M.
+% date 13/07/2020 time 07:18P.M. % date 13/09/2020 time 05:19P.M. % date 14/09/2020 time 07:16P.M. % 25/09/2020 time 01:33PM
 clear all
 % Read the data
 % Time series or cross section data or mixed
