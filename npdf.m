@@ -19,11 +19,11 @@ else
         disp('error: parameter should be a scalar')
      end
 end
-
+N =[]
 sigma(sigma <= 0) = NaN;
 Y = 1/(sigma*sqrt(2*pi));
 Z = ((X-mu).^2 )/ (2*sigma^2);
-N = Y.*exp(-Z);
+N = [Y.*exp(-Z)];
 
 plot(X,N)
 xlabel ("X");
